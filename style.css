@@ -984,3 +984,30 @@ body {
 .not-loaded * {
   animation-play-state: paused !important;
 }
+
+.valentine-text {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 3rem;
+  color: #ff4d4d; /* Red */
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  text-shadow: 2px 2px 10px rgba(255, 0, 0, 0.8);
+  z-index: 100;
+}
+
+.valentine-text span {
+  display: inline-block;
+  animation: heartbeat 1.5s infinite ease-in-out;
+}
+
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+}
